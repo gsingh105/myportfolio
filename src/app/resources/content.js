@@ -1,28 +1,19 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Gurwinder",
+  lastName: "Singh",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Frontend Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "gurwindersinghvlogs@gmail.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Punjabi", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
-const newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: (
-    <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
-    </>
-  ),
-};
+
 
 const social = [
   // Links are automatically displayed.
@@ -30,12 +21,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/gsingh105",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/gurwindersingh-only",
   },
   {
     name: "X",
@@ -58,13 +49,13 @@ const home = {
   headline: <>Building bridges between design and code</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Recent project: <strong className="ml-4">JusticeHub AI</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Gurwinder, a front-end developer specializing in React and modern web technologies. I'm passionate about creating 
+      <br/> seamless user experiences and currently looking for the right opportunity to make an impact.
     </>
   ),
 };
@@ -90,9 +81,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Gurwinder is a front-end developer from Batala, Punjab, specializing in building dynamic web applications
+        with clean, modern interfaces. He focuses on creating optimized user experiences using the latest
+        web technologies and best practices in front-end development.
       </>
     ),
   },
@@ -101,42 +92,38 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Webbers Live Solutions",
+        timeframe: "June 2023 - July 2023",
+        role: "Web Developer Intern",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+         <>
+          Built dynamic user interfaces using React, JavaScript, and CSS, focusing on creating
+          responsive designs that work seamlessly across desktop and mobile devices.
+         </>,
+         <>
+          Participated in code reviews and agile development processes, learning best practices
+          for component reusability, performance optimization, and modern front-end workflows.
+         </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Webbers UX",
+        timeframe: "June 2024 - july 2024",
+        role: "Cloud Computing Trainee",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+         <>
+          Gained hands-on experience with AWS core services including EC2 and S3, learning
+          cloud architecture principles and best practices for scalable web applications.
+         </>,
+         <>
+          Completed training modules on cloud security, monitoring, and deployment strategies,
+          earning foundational knowledge in DevOps practices and infrastructure management.
+         </>,
         ],
         images: [],
       },
@@ -147,12 +134,8 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Sant Longowal Institute of Engineering and Technology (CFTI)",
+        description: <>Studied Bachelor of Engineering in Computer Science and Engineering (2021-2025)</>,
       },
     ],
   },
@@ -160,38 +143,72 @@ const about = {
     display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
+  
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
+  title: "Next.js",
+  description: <>Building full-stack web applications with Next.js, focusing on server-side rendering and optimal performance.</>,
+  images: [
+    {
+    },
+  ],
+},
+{
+  title: "React",
+  description: <>Creating dynamic user interfaces with React hooks, context API, and modern component patterns for scalable applications.</>,
+  images: [
+    {
+    },
+  ],
+},
+{
+  title: "TypeScript",
+  description: <>Writing type-safe JavaScript code with TypeScript to catch errors early and improve development productivity.</>,
+  images: [
+    {
+    },
+  ],
+},
+{
+  title: "Tailwind CSS",
+  description: <>Crafting responsive, mobile-first designs with utility-first CSS framework for rapid UI development.</>,
+  images: [
+    {
+    },
+  ],
+},
+{
+  title: "Node.js",
+  description: <>Building robust backend APIs and server-side applications using Node.js and Express framework.</>,
+  images: [
+    {
+    },
+  ],
+},
+{
+  title: "MongoDB",
+  description: <>Designing and managing NoSQL databases with MongoDB for flexible, document-based data storage solutions.</>,
+  images: [
+    {
+    },
+  ],
+},
+{
+  title: "SQL",
+  description: <>Designing and managing relational databases with SQL for structured data storage, complex queries, and data analysis solutions.</>,
+  images: [
+    {
+    },
+  ],
+},
+{
+  title: "Git & GitHub",
+  description: <>Managing version control and collaborating on projects using Git workflows and GitHub for seamless team development.</>,
+  images: [
+    {
+    },
+  ],
+},
+
     ],
   },
 };
@@ -214,55 +231,5 @@ const work = {
   // All projects will be listed on the /home and /work routes
 };
 
-const gallery = {
-  path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
-};
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, home, about, blog, work};
