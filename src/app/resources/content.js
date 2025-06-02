@@ -50,7 +50,7 @@ const home = {
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">JusticeHub AI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/JusticeHubAI",
   },
   subline: (
     <>
